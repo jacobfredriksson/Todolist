@@ -1,0 +1,52 @@
+body {
+  margin: 10px;
+  background-color: #F0F8FF;
+}
+
+li {
+  list-style-type: none;
+}
+
+h4 {
+  padding-top: 5px;
+  margin-left: 5px;
+}
+
+label {
+  margin-left: 5px;
+}
+
+p {
+  margin: 5px;
+}
+
+button {
+  margin: 5px;
+  margin-left: 20px;
+}
+
+
+.main-form {
+  width: 50%;
+  float: left;
+}
+
+.todo-list {
+  float: right;
+  width: 50%;
+}
+
+.one-todo {
+  width: 200px;
+  height: auto;
+  background: lightblue;
+}
+
+.user-text {
+  min-width: 205px;
+  max-width: 205px;
+}
+
+.done-checkbox {
+  margin: 0 0 20px 0 !important;
+}

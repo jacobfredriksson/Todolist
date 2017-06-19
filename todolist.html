@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset ="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="todolist.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+</head>
+
+<body>
+  <div class="container main-form">
+    <h1> Min Todolist </h1>
+    <form class="add-todo">
+      <div class="form-group">
+        <label>
+          Dagens datum:
+          <input class="form-control user-text" type="text" id="today" name="item" disabled name="today">
+        </label>
+      </div>
+      <div class="form-group">
+        <label>
+          Ska senast vara klart:
+          <input class="form-control user-text" type="date" id="until" name="item" required name="until">
+        </label>
+      </div>
+      <div class="form-group">
+        <label>
+          Titel:
+          <input class="form-control user-text" type="text" id="header" name="item" required name="header">
+        </label>
+      </div>
+      <div class="form-group">
+        <label>
+          Att göra:
+          <textarea class="form-control user-text" type="text" id="info" name="item" required name="info"></textarea>
+        </label>
+      </div>
+      <div class="form-group">
+        <label>
+          Prio:
+          <input class="form-control user-text" type="number" min="1" max="3" id="prio" name="item" required name="prio">
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-success" id="save" value="spara" name="newTodo"> Spara </button>
+      <button class="btn btn-danger" type="button" id="clear"> Rensa Alla </button>
+    </form>
+  </div>
+
+  <div class="container-fluid todo-list">
+    <ul class="todo-list">
+      <li> kommande todos</li>
+    </ul>
+  </div>
+
+  <script src="todolist.js"> </script>
+</body>
+</html>
